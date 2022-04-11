@@ -12,7 +12,6 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 final class Password0
 {
-    private string $apiVersion = '1.0';
     private string $baseUrl    = 'https://password0.com/api/v1/';
 
     private ?HttpClientInterface $client = null;
@@ -49,7 +48,7 @@ final class Password0
     /**
      * Get password0 api client.
      *
-     * @return HttpClientInterface
+     * @return ?HttpClientInterface
      */
     public function getClient(): ?HttpClientInterface
     {

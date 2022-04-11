@@ -8,7 +8,7 @@ use Iamolayemi\Password0\Exception\ClientException;
 use Iamolayemi\Password0\Password0;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
-abstract class BaseEndpoint
+class BaseEndpoint
 {
     protected Password0 $password0;
 
@@ -31,7 +31,7 @@ abstract class BaseEndpoint
     /**
      * Make a http get request.
      *
-     * @param  array<mixed>  $queryParams
+     * @param array<mixed> $queryParams
      *
      * @return array<mixed>
      */
@@ -47,7 +47,7 @@ abstract class BaseEndpoint
     /**
      * Make a http post request.
      *
-     * @param  array<mixed>  $bodyParams
+     * @param array<mixed> $bodyParams
      *
      * @return array<mixed>
      */
@@ -63,7 +63,7 @@ abstract class BaseEndpoint
     /**
      * Make a http patch request.
      *
-     * @param  array<mixed>  $bodyParams
+     * @param array<mixed> $bodyParams
      *
      * @return array<mixed>
      */
