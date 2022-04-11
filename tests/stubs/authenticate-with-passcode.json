@@ -1,0 +1,17 @@
+{
+  "message": "Account authenticated successfully.",
+  "data": {
+    "user": {
+      "id": 1,
+      "name": "Test User",
+      "email": "test@example.com",
+      "phone_number": 123456780,
+      "status": "active",
+      "metadata": null,
+      "created_at": "2022-04-02T18:30:36.000000Z",
+      "updated_at": "2022-04-02T18:30:36.000000Z"
+    },
+    "session_jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3Bhc3N3b3JkMC50ZXN0L2FwaS92MS9tYWdpY19saW5rcy9lbWFpbC9hdXRoZW50aWNhdGUiLCJpYXQiOjE2NDk2Mjc5OTQsImV4cCI6MTY0OTcxNzk5NCwibmJmIjoxNjQ5NjI3OTk0LCJqdGkiOiJSaUY4MDJYVjJqMEFLUElQIiwic3ViIjoiMiIsInBydiI6IjZmOTY3YWQwNjJkYzY0YThiYThjNmY0Y2FjNDdlZDE1OWUxOWUyN2EifQ.1a4-0YuxLfD1lDIi_EN_NaPisaNsroT99FjSYeMylgw",
+    "session_expires_at": "2022-04-11 22:59:54"
+  }
+}

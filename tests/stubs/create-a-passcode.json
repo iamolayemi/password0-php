@@ -1,0 +1,8 @@
+{
+  "message": "Email passcode created successfully.",
+  "data": {
+    "email": "test@example.com",
+    "code": "iRDVSQ",
+    "expiration_time": 1649629294
+  }
+}
