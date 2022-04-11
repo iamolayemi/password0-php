@@ -19,10 +19,10 @@ jobs:
           coverage: none
 
       - name: Install PHP dependencies
-        run: composer update --${{ matrix.stability }} --prefer-dist --no-interaction
+        run: composer update --prefer-dist --no-interaction
 
       - name: Run PHP-CS-Fixer
-        run: PHP_CS_FIXER_IGNORE_ENV=true vendor/bin/php-cs-fixer fix -v --allow-risky=yes --dry-run --ansi
+        run: PHP_CS_FIXER_IGNORE_ENV=true vendor/bin/php-cs-fixer fix -v --allow-risky=yes
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -44,7 +44,7 @@ jobs:
           coverage: none
 
       - name: Install PHP dependencies
-        run: composer update --${{ matrix.stability }} --prefer-dist --no-interaction
+        run: composer update --prefer-dist --no-interaction
 
       - name: Run PHPStan
-        run: vendor/bin/phpstan analyse  --error-format=github --no-progress --debug --ansi
+        run: vendor/bin/phpstan analyse  --error-format=github
