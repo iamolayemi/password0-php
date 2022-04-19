@@ -50,7 +50,7 @@ Authenticate via magic link
 // authenticate a user via email address and a magic link token sent using email
 $client->magicLinks()->via('email')->authenticate(['email' => 'test@example.com', 'token' => 'test-email-token']);
 
-// authenticate a user via phone number and a magic link token send using sms
+// authenticate a user via phone number and a magic link token sent using sms
 $client->magicLinks()->via('sms')->authenticate(['phone_number' => '+1234567890', 'token' => 'test-sms-token']);
 
 // authenticate a user via phone number and a magic link token sent using whatsapp
@@ -81,7 +81,7 @@ Authenticate via one time passcodes
 // authenticate a user via email address and a one time passcode sent using email
 $client->passCodes()->via('email')->authenticate(['email' => 'test@example.com', 'code' => '123456']);
 
-// authenticate a user via phone number and a one time passcode send using sms
+// authenticate a user via phone number and a one time passcode sent using sms
 $client->passCodes()->via('sms')->authenticate(['phone_number' => '+1234567890', 'code' => '1234556']);
 
 // authenticate a user via phone number and a one time passcode sent using whatsapp
