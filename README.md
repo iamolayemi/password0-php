@@ -20,10 +20,10 @@ composer require iamolayemi/password0-php
 
 ## Usage
 
-Initialize a new Password0 client with your secret key
+Initialize a new Password0 client with your application secret key
 
 ```php
-$client = new Password0('__secret_key__');
+$client = new Password0('__app_secret_key__');
 ```
 
 ### Magic Links
@@ -93,13 +93,13 @@ $client->passCodes()->via('whatsapp')->authenticate(['phone_number' => '+1234567
 Get authenticated user account
 
 ```php
-$client->sessions()->account('__session_jwt');
+$client->sessions()->account('__session_jwt__');
 ```
 
 Invalidate/Logout a user account
 
 ```php
-$client->sessions()->invalidate('__session_jwt');
+$client->sessions()->invalidate('__session_jwt__');
 ```
 
 ## Testing
