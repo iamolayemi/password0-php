@@ -1,7 +1,6 @@
-[![Latest Version on Packagist](https//img.shields.io/packagist/v/iamolayemi/password0-php.svg?style=flat-square)](https//packagist.org/packages/iamolayemi/password0-php)
-[![Quality Score](https//img.shields.io/scrutinizer/g/iamolayemi/laravel-paystack.svg?style=flat-square)](https//scrutinizer-ci.com/g/iamolayemi/password0-php)
-[![Total Downloads](https//img.shields.io/packagist/dt/iamolayemi/password0-php.svg?style=flat-square)](https//packagist.org/packages/iamolayemi/password0-php)
-![GitHub Actions](https//github.com/iamolayemi/password0-php/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/iamolayemi/password0-php.svg?style=flat-square)](https://packagist.org/packages/iamolayemi/password0-php)
+[![Total Downloads](https://img.shields.io/packagist/dt/iamolayemi/password0-php.svg?style=flat-square)](https://packagist.org/packages/iamolayemi/password0-php)
+![GitHub Actions](https://github.com/iamolayemi/password0-php/actions/workflows/run-tests.yml/badge.svg)
 
 This package provides an expressive and convenient way to interact with the Password0 API within your PHP
 Application.
