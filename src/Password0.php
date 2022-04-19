@@ -17,11 +17,10 @@ final class Password0
 
     private ?HttpClientInterface $client = null;
 
-
     /**
      * Password0 Constructor.
      *
-     * @param  string  $secretKey
+     * @param string $secretKey
      *
      * @throws ClientException
      */
@@ -83,7 +82,6 @@ final class Password0
         return new MagicLinks($this);
     }
 
-
     /**
      * Create a new instance to authentication via passcodes.
      *
@@ -96,7 +94,6 @@ final class Password0
 
     /**
      * Create a new instance to session management.
-     *
      */
     public function sessions(): Sessions
     {

@@ -35,6 +35,7 @@ final class PassCodes extends BaseEndpoint implements AuthenticationChannel
      * Create a new magic link token.
      *
      * @param array<mixed> $payload
+     *
      * @return array<mixed>
      */
     public function create(array $payload = []): array
@@ -46,6 +47,7 @@ final class PassCodes extends BaseEndpoint implements AuthenticationChannel
      * Send a new magic link token.
      *
      * @param array<mixed> $payload
+     *
      * @return array<mixed>
      */
     public function send(array $payload = []): array
@@ -57,6 +59,7 @@ final class PassCodes extends BaseEndpoint implements AuthenticationChannel
      * Authenticate a user via a magic link token.
      *
      * @param array<mixed> $payload
+     *
      * @return array<mixed>
      */
     public function authenticate(array $payload = []): array

@@ -35,8 +35,8 @@ it('can create a new magic link', function () {
 
 it('can send a new magic link to a user', function () {
     $expectedResponseData = [
-        "status_code" => 200,
-        'message' => 'An email has been sent to test@example.com'
+        'status_code' => 200,
+        'message' => 'An email has been sent to test@example.com',
     ];
     $mockResponse = new MockResponse(json_encode($expectedResponseData, JSON_THROW_ON_ERROR));
 

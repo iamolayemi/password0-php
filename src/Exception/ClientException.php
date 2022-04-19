@@ -12,9 +12,9 @@ use Throwable;
  */
 final class ClientException extends Exception implements BaseException
 {
-    public const MSG_INVALID_SECRET_KEY         = 'The password sdk requires a secret key key to be provided at initialization';
+    public const MSG_INVALID_SECRET_KEY = 'The password sdk requires a secret key key to be provided at initialization';
     public const MSG_CONNECTION_NOT_ESTABLISHED = 'An error occurred while establishing a connection to password0 server.';
-    public const MSG_CHANNEL_NOT_SUPPORTED      = 'The provided authentication channel is not supported.';
+    public const MSG_CHANNEL_NOT_SUPPORTED = 'The provided authentication channel is not supported.';
 
     public static function invalidSecretKey(Throwable $previous = null): self
     {
