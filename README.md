@@ -6,7 +6,7 @@
 This package provides an expressive and convenient way to interact with the Password0 API within your PHP
 Application.
 
-> Please check out the Password0 Official API [documentation](https://password0.com/docs) for full reference on request
+> Please refer to the Password0 Official API [documentation](https://password0.com/docs) for full reference on request
 > parameters and other necessary information.
 
 ## Installation
