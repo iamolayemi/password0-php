@@ -6,19 +6,19 @@ $finder = PhpCsFixer\Finder::create()
     ->append(['.php-cs-fixer.dist.php']);
 
 $rules = [
-    '@Symfony'               => true,
+    '@Symfony' => true,
     'phpdoc_no_empty_return' => false,
-    'array_syntax'           => ['syntax' => 'short'],
-    'yoda_style'             => false,
+    'array_syntax' => ['syntax' => 'short'],
+    'yoda_style' => false,
     'binary_operator_spaces' => [
         'operators' => [
             '=>' => 'single_space',
-            '='  => 'single_space',
+            '=' => 'single_space',
         ],
     ],
-    'concat_space'            => ['spacing' => 'one'],
+    'concat_space' => ['spacing' => 'one'],
     'not_operator_with_space' => false,
-    'increment_style'         => ['style' => 'post'],
+    'increment_style' => ['style' => 'post'],
 ];
 
 return (new PhpCsFixer\Config())

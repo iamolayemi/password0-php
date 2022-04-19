@@ -34,34 +34,36 @@ final class MagicLinks extends BaseEndpoint implements AuthenticationChannel
     /**
      * Create a new magic link token.
      *
-     * @param  array<mixed>  $payload
+     * @param array<mixed> $payload
      *
      * @return array<mixed>
      */
     public function create(array $payload = []): array
     {
-        return $this->post('magic_links/'.$this->channel.'/create', $payload);
+        return $this->post('magic_links/' . $this->channel . '/create', $payload);
     }
 
     /**
      * Send a new magic link token.
      *
-     * @param  array<mixed>  $payload
+     * @param array<mixed> $payload
+     *
      * @return array<mixed>
      */
     public function send(array $payload = []): array
     {
-        return $this->post('magic_links/'.$this->channel.'/send', $payload);
+        return $this->post('magic_links/' . $this->channel . '/send', $payload);
     }
 
     /**
      * Authenticate a user via a magic link token.
      *
-     * @param  array<mixed>  $payload
+     * @param array<mixed> $payload
+     *
      * @return array<mixed>
      */
     public function authenticate(array $payload = []): array
     {
-        return $this->post('magic_links/'.$this->channel.'/authenticate', $payload);
+        return $this->post('magic_links/' . $this->channel . '/authenticate', $payload);
     }
 }

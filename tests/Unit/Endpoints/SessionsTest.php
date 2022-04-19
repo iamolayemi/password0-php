@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Iamolayemi\Password0\Exception\ClientException;
 use Iamolayemi\Password0\Password0;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
@@ -31,8 +30,8 @@ it('can get a user account from session jwt', function () {
 
 it('can invalidate the session of a user', function () {
     $expectedResponseData = [
-        "status_code" => 200,
-        "message" => "Account logged out successfully."
+        'status_code' => 200,
+        'message' => 'Account logged out successfully.',
     ];
     $mockResponse = new MockResponse(json_encode($expectedResponseData, JSON_THROW_ON_ERROR));
 
