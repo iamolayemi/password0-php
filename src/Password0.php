@@ -6,20 +6,22 @@ namespace Iamolayemi\Password0;
 
 use Iamolayemi\Password0\Endpoints\MagicLinks;
 use Iamolayemi\Password0\Endpoints\PassCodes;
+use Iamolayemi\Password0\Endpoints\Sessions;
 use Iamolayemi\Password0\Exception\ClientException;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 final class Password0
 {
-    private string $baseUrl    = 'https://password0.com/api/v1/';
+    private string $baseUrl = 'https://api.password0.com/v1/';
 
     private ?HttpClientInterface $client = null;
+
 
     /**
      * Password0 Constructor.
      *
-     * @param string $secretKey
+     * @param  string  $secretKey
      *
      * @throws ClientException
      */
@@ -38,8 +40,8 @@ final class Password0
     {
         $this->client = HttpClient::createForBaseUri($this->baseUrl, [
             'auth_bearer' => $this->secretKey,
-            'headers'     => [
-                'Accept'       => 'application/json',
+            'headers' => [
+                'Accept' => 'application/json',
                 'Content-Type' => 'application/json',
             ],
         ]);
@@ -81,6 +83,7 @@ final class Password0
         return new MagicLinks($this);
     }
 
+
     /**
      * Create a new instance to authentication via passcodes.
      *
@@ -89,5 +92,14 @@ final class Password0
     public function passCodes(): PassCodes
     {
         return new PassCodes($this);
+    }
+
+    /**
+     * Create a new instance to session management.
+     *
+     */
+    public function sessions(): Sessions
+    {
+        return new Sessions($this);
     }
 }

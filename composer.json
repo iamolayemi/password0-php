@@ -38,8 +38,8 @@
     },
     "scripts": {
         "lint": "PHP_CS_FIXER_IGNORE_ENV=true php-cs-fixer fix -v",
+        "test": "vendor/bin/pest",
         "test:lint": "PHP_CS_FIXER_IGNORE_ENV=true php-cs-fixer fix -v --dry-run",
-        "test:unit": "vendor/bin/pest",
         "test:types": "phpstan analyse --memory-limit=-1 --debug",
         "test:coverage": "vendor/bin/pest --stop-on-failure --coverage"
     },

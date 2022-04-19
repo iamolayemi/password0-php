@@ -12,8 +12,8 @@ $rules = [
     'yoda_style'             => false,
     'binary_operator_spaces' => [
         'operators' => [
-            '=>' => 'align',
-            '='  => 'align',
+            '=>' => 'single_space',
+            '='  => 'single_space',
         ],
     ],
     'concat_space'            => ['spacing' => 'one'],

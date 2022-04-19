@@ -1,0 +1,14 @@
+{
+  "status_code": 200,
+  "message": "Account details fetched successfully",
+  "data": {
+    "id": "52a42715-da4b-4078-a02e-8e45b2c11a58",
+    "name": "Test User",
+    "email": "test@example.com",
+    "phone_number": "+12025550187",
+    "status": "active",
+    "metadata": null,
+    "created_at": "2022-04-12T21:35:32.000000Z",
+    "updated_at": "2022-04-12T21:35:32.000000Z"
+  }
+}

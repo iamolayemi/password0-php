@@ -1,4 +1,5 @@
 {
+  "status_code": 200,
   "message": "Email passcode created successfully.",
   "data": {
     "email": "test@example.com",

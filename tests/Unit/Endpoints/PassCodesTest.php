@@ -20,7 +20,7 @@ test('it can create a new passcode', function () {
 
     $mockResponse = new MockResponse(json_encode($expectedResponseData, JSON_THROW_ON_ERROR));
 
-    $requestData         = ['email' => 'test@example.com'];
+    $requestData = ['email' => 'test@example.com'];
     $expectedRequestData = json_encode($requestData, JSON_THROW_ON_ERROR);
 
     $client = new MockHttpClient($mockResponse, $this->sdk->getBaseUrl());
@@ -34,10 +34,13 @@ test('it can create a new passcode', function () {
 });
 
 test('it can send a passcode to a user', function () {
-    $expectedResponseData = ['message' => 'An email has been sent to test@example.com'];
-    $mockResponse         = new MockResponse(json_encode($expectedResponseData, JSON_THROW_ON_ERROR));
+    $expectedResponseData = [
+        "status_code" => 200,
+        'message' => 'An email has been sent to test@example.com'
+    ];
+    $mockResponse = new MockResponse(json_encode($expectedResponseData, JSON_THROW_ON_ERROR));
 
-    $requestData         = ['email' => 'test@example.com'];
+    $requestData = ['email' => 'test@example.com'];
     $expectedRequestData = json_encode($requestData, JSON_THROW_ON_ERROR);
 
     $client = new MockHttpClient($mockResponse, $this->sdk->getBaseUrl());
@@ -52,9 +55,9 @@ test('it can send a passcode to a user', function () {
 
 test('it can authenticate a user via a passcode', function () {
     $expectedResponseData = json_decode(file_get_contents('tests/stubs/authenticate-with-passcode.json'), true);
-    $mockResponse         = new MockResponse(json_encode($expectedResponseData, JSON_THROW_ON_ERROR));
+    $mockResponse = new MockResponse(json_encode($expectedResponseData, JSON_THROW_ON_ERROR));
 
-    $requestData         = ['email' => 'test@example.com', 'code' => 'iRDVSQ'];
+    $requestData = ['email' => 'test@example.com', 'code' => 'iRDVSQ'];
     $expectedRequestData = json_encode($requestData, JSON_THROW_ON_ERROR);
 
     $client = new MockHttpClient($mockResponse, $this->sdk->getBaseUrl());

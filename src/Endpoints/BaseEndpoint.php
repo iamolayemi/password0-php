@@ -31,8 +31,7 @@ class BaseEndpoint
     /**
      * Make a http get request.
      *
-     * @param array<mixed> $queryParams
-     *
+     * @param  array<mixed>  $queryParams
      * @return array<mixed>
      */
     protected function get(string $url, array $queryParams = []): array
@@ -47,8 +46,7 @@ class BaseEndpoint
     /**
      * Make a http post request.
      *
-     * @param array<mixed> $bodyParams
-     *
+     * @param  array<mixed>  $bodyParams
      * @return array<mixed>
      */
     protected function post(string $url, array $bodyParams = []): array
@@ -63,8 +61,7 @@ class BaseEndpoint
     /**
      * Make a http patch request.
      *
-     * @param array<mixed> $bodyParams
-     *
+     * @param  array<mixed>  $bodyParams
      * @return array<mixed>
      */
     protected function patch(string $url, array $bodyParams = []): array

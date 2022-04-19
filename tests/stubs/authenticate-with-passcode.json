@@ -1,8 +1,9 @@
 {
+  "status_code": 200,
   "message": "Account authenticated successfully.",
   "data": {
     "user": {
-      "id": 1,
+      "id": "52a42715-da4b-4078-a02e-8e45b2c11a58",
       "name": "Test User",
       "email": "test@example.com",
       "phone_number": 123456780,
